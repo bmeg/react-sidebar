@@ -319,7 +319,7 @@ class Sidebar extends Component {
 
     return (
       <div {...rootProps}>
-        <div className={this.props.sidebarClassName} style={sidebarStyle} onTransitionEnd={this.props.onTransitionEnd} ref={this.saveSidebarRef}>
+        <div className={this.props.sidebarClassName} style={sidebarStyle} ref={this.saveSidebarRef} onTransitionEnd={this.props.onTransitionEnd}>
           {this.props.sidebar}
         </div>
         <div className={this.props.overlayClassName}
@@ -328,7 +328,7 @@ class Sidebar extends Component {
              tabIndex="0"
              onClick={this.overlayClicked}
           />
-        <div className={this.props.contentClassName} style={contentStyle}>
+        <div className={this.props.contentClassName} style={contentStyle} onTransitionEnd={this.props.onTransitionEnd}>
           {dragHandle}
           {this.props.children}
         </div>
