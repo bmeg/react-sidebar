@@ -1,5 +1,5 @@
 {
-  "name": "react-sidebar",
+  "name": "react-sidebar-width",
   "version": "2.3.2",
   "author": "Paulus Schoutsen <Paulus@PaulusSchoutsen.nl>",
   "description": "A sidebar component for React.",
@@ -18,7 +18,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/balloob/react-sidebar.git"
+    "url": "git://github.com/bmeg/react-sidebar.git"
   },
   "license": "MIT",
   "peerDependencies": {

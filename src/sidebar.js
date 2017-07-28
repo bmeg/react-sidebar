@@ -319,7 +319,7 @@ class Sidebar extends Component {
 
     return (
       <div {...rootProps}>
-        <div className={this.props.sidebarClassName} style={sidebarStyle} ref={this.saveSidebarRef}>
+        <div className={this.props.sidebarClassName} style={sidebarStyle} onTransitionEnd={this.props.onTransitionEnd} ref={this.saveSidebarRef}>
           {this.props.sidebar}
         </div>
         <div className={this.props.overlayClassName}
